@@ -1,1 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – PartyVerse</title>
+  <style>
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --border: #2e2e42;
+      --text: #e8e8f0;
+      --muted: #9090a8;
+      --accent: #a78bfa;
+      --accent2: #f0b429;
+      --link: #818cf8;
+      --danger: #f87171;
+      --success: #34d399;
+      --radius: 12px;
+      --max-w: 760px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+
+    /* ── Header ── */
+    header {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    header h1 {
+      font-size: clamp(28px, 6vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    header h1 span { color: var(--accent); }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .meta strong { color: var(--text); }
+
+    /* ── Nav ── */
+    .sibling-nav {
+      max-width: var(--max-w);
+      margin: 24px auto 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 14px;
+    }
+    .sibling-nav span { color: var(--muted); }
+    .sibling-nav a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .sibling-nav a:hover { text-decoration: underline; }
+
+    /* ── Main ── */
+    main {
+      max-width: var(--max-w);
+      margin: 40px auto 0;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 20px 0 8px;
+    }
+    p { color: var(--text); margin-bottom: 12px; }
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; color: var(--text); }
+    a { color: var(--link); }
+
+    /* ── Callout boxes ── */
+    .callout {
+      background: var(--surface);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+    .callout.green { border-color: var(--success); }
+    .callout.gold  { border-color: var(--accent2); }
+    .callout strong { color: var(--accent); }
+    .callout.green strong { color: var(--success); }
+    .callout.gold strong  { color: var(--accent2); }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin: 16px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead tr { background: var(--surface); }
+    th {
+      text-align: left;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 16px;
+    }
+    .contact-card p { margin-bottom: 6px; }
+    .contact-card .label { color: var(--muted); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 12px; margin-bottom: 4px; }
+
+    /* ── Footer ── */
+    footer {
+      max-width: var(--max-w);
+      margin: 48px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    footer a { color: var(--link); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">📱 PartyVerse</div>
+  <h1>Privacy <span>Policy</span></h1>
+  <div class="meta">
+    <span><strong>Developer:</strong> Arceon Studios</span>
+    <span><strong>Effective:</strong> 1 September 2025</span>
+    <span><strong>Last Updated:</strong> 1 September 2025</span>
+  </div>
+</header>
+
+<div class="sibling-nav">
+  <span>📄 Also read:</span>
+  <a href="terms-of-service.html">Terms of Service →</a>
+</div>
+
+<main>
+
+  <div class="callout green">
+    <strong>Short version:</strong> PartyVerse is an offline party game. We do not collect your name, email, location, or any personal information for gameplay. The only data flow occurs during in-app purchases, handled entirely by Google Play.
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="num">1</span> Introduction</h2>
+    <p>Welcome to <strong>PartyVerse</strong> ("the App"), a multiplayer party game developed and published by <strong>Arceon Studios</strong> ("we," "us," or "our"). This Privacy Policy explains how we handle information when you use PartyVerse on your Android device.</p>
+    <p>By downloading or using PartyVerse, you agree to the practices described in this Privacy Policy. If you do not agree, please discontinue use of the App immediately.</p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="num">2</span> Information We Collect</h2>
+
+    <h3>2.1 Information You Provide Directly</h3>
+    <p>PartyVerse does <strong>not</strong> require you to create an account or provide any personal information. Player names entered during game setup are stored <strong>locally on your device only</strong> using Android SharedPreferences and are never transmitted anywhere.</p>
+
+    <h3>2.2 Purchase Information</h3>
+    <p>If you purchase <strong>PartyVerse Premium</strong> (our one-time in-app purchase), the transaction is processed entirely by <strong>Google Play Billing</strong>. We do not receive, store, or process your payment card details. We receive only a purchase confirmation token from Google Play, stored locally on your device to unlock premium features.</p>
+
+    <h3>2.3 Automatically Collected Diagnostic Data</h3>
+    <p>We may collect limited, anonymised technical data through Google Play Services or Firebase Crashlytics to maintain and improve the App. This may include:</p>
+    <ul>
+      <li>Device model and operating system version</li>
+      <li>Crash reports and error logs</li>
+      <li>App performance metrics (launch times, frame rates)</li>
+    </ul>
+    <p>This data is aggregated and cannot be used to identify you personally.</p>
+
+    <h3>2.4 What We Do NOT Collect</h3>
+    <div class="callout">
+      <strong>We never collect:</strong> your real name, email, phone number, location (GPS or network), camera or microphone access, contacts, browsing history, or any sensitive personal information.
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="num">3</span> How We Use Information</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Purpose</th><th>Legal Basis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Processing and verifying in-app purchases</td><td>Performance of a contract</td></tr>
+          <tr><td>Diagnosing crashes and improving stability</td><td>Legitimate interest</td></tr>
+          <tr><td>Analysing aggregate usage patterns</td><td>Legitimate interest</td></tr>
+          <tr><td>Complying with applicable laws and Google Play policies</td><td>Legal obligation</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We will <strong>never</strong> sell, rent, or trade your information to third parties for marketing.</p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="num">4</span> Data Storage and Retention</h2>
+    <h3>4.1 Local Storage</h3>
+    <p>Game preferences, player names, and purchase status are stored locally on your device using Android SharedPreferences. This data is automatically deleted when you uninstall the App.</p>
+    <h3>4.2 Third-Party Diagnostic Data</h3>
+    <p>Crash and diagnostic data may be retained by third-party services (such as Firebase Crashlytics) for up to <strong>90 days</strong> per their own data retention policies.</p>
+    <h3>4.3 Purchase Records</h3>
+    <p>Google Play retains records of your purchases per their own policies. We do not maintain independent purchase records beyond what is stored locally on your device.</p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="num">5</span> Third-Party Services</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Play Billing</td>
+            <td>In-app purchase processing</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Google Play Services</td>
+            <td>App distribution, license verification</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Firebase Crashlytics</td>
+            <td>Crash reporting and diagnostics</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>We are not responsible for the privacy practices of these third-party services.</p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2><span class="num">6</span> Children's Privacy</h2>
+    <p>PartyVerse is rated for users aged <strong>13 and above</strong>. We do not knowingly collect personal information from children under 13. If you believe your child under 13 has provided personal information through the App, please contact us at <a href="mailto:arceonstudios@gmail.com">arceonstudios@gmail.com</a> and we will promptly delete such information.</p>
+    <p>Some premium content packs include adult-themed party game content. Parental guidance is advised.</p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2><span class="num">7</span> Data Security</h2>
+    <p>We implement commercially reasonable technical and organisational measures to protect the limited data we process. However, no method of electronic storage or transmission is 100% secure. We cannot guarantee absolute security of data processed by third-party services.</p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="num">8</span> Your Rights</h2>
+    <p>Under the <strong>Digital Personal Data Protection Act, 2023 (DPDPA)</strong> of India, you have the following rights:</p>
+    <ul>
+      <li><strong>Right to Access</strong> — Request information about personal data we hold about you</li>
+      <li><strong>Right to Correction</strong> — Request correction of inaccurate personal data</li>
+      <li><strong>Right to Erasure</strong> — Request deletion of your personal data</li>
+      <li><strong>Right to Grievance Redressal</strong> — Lodge a complaint with us or the Data Protection Board of India</li>
+    </ul>
+    <div class="callout gold">
+      <strong>Simple exercise:</strong> Since PartyVerse stores all data locally on your device, most rights can be exercised simply by <strong>uninstalling the App</strong>. For third-party crash logs, contact us and we will assist.
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2><span class="num">9</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this document. For significant changes, we will notify users through an in-app notice or the Google Play Store listing. Continued use of the App after any change constitutes your acceptance of the revised policy.</p>
+  </section>
+
+  <!-- 10 -->
+  <section>
+    <h2><span class="num">10</span> Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy:</p>
+    <div class="contact-card">
+      <p class="label">Developer</p>
+      <p><strong>Arceon Studios</strong></p>
+      <p class="label">Email</p>
+      <p><a href="mailto:arceonstudios@gmail.com">arceonstudios@gmail.com</a></p>
+      <p class="label">Response Time</p>
+      <p>We aim to respond to all enquiries within <strong>30 days</strong>.</p>
+    </div>
+  </section>
+
+  <div class="callout">
+    <strong>Legal compliance:</strong> This Privacy Policy is drafted to comply with the Google Play Developer Program Policies, the Digital Personal Data Protection Act, 2023 (India), and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.
+  </div>
+
+</main>
+
+<footer>
+  <span>© 2025 Arceon Studios. All rights reserved.</span>
+  <a href="terms-of-service.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
 
