@@ -1,1 +1,399 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service – PartyVerse</title>
+  <style>
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --border: #2e2e42;
+      --text: #e8e8f0;
+      --muted: #9090a8;
+      --accent: #a78bfa;
+      --accent2: #f0b429;
+      --link: #818cf8;
+      --danger: #f87171;
+      --success: #34d399;
+      --radius: 12px;
+      --max-w: 760px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+
+    header {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #f0b429, #e65c00);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    header h1 {
+      font-size: clamp(28px, 6vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    header h1 span { color: var(--accent2); }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .meta strong { color: var(--text); }
+
+    .sibling-nav {
+      max-width: var(--max-w);
+      margin: 24px auto 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 14px;
+    }
+    .sibling-nav span { color: var(--muted); }
+    .sibling-nav a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .sibling-nav a:hover { text-decoration: underline; }
+
+    main {
+      max-width: var(--max-w);
+      margin: 40px auto 0;
+    }
+
+    section { margin-bottom: 48px; }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent2);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .num {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 20px 0 8px;
+    }
+    p { color: var(--text); margin-bottom: 12px; }
+    ul, ol { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; color: var(--text); }
+    a { color: var(--link); }
+
+    .callout {
+      background: var(--surface);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+    .callout.gold  { border-color: var(--accent2); }
+    .callout.red   { border-color: var(--danger); }
+    .callout.green { border-color: var(--success); }
+    .callout strong { color: var(--accent); }
+    .callout.gold strong  { color: var(--accent2); }
+    .callout.red strong   { color: var(--danger); }
+    .callout.green strong { color: var(--success); }
+
+    .caps {
+      font-size: 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 16px;
+    }
+    .contact-card p { margin-bottom: 6px; }
+    .contact-card .label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      max-width: var(--max-w);
+      margin: 48px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    footer a { color: var(--link); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">📜 Legal</div>
+  <h1>Terms of <span>Service</span></h1>
+  <div class="meta">
+    <span><strong>Developer:</strong> Arceon Studios</span>
+    <span><strong>Effective:</strong> 1 September 2025</span>
+    <span><strong>Last Updated:</strong> 1 September 2025</span>
+  </div>
+</header>
+
+<div class="sibling-nav">
+  <span>🔒 Also read:</span>
+  <a href="privacy-policy.html">Privacy Policy →</a>
+</div>
+
+<main>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="num">1</span> Acceptance of Terms</h2>
+    <p>By downloading, installing, accessing, or using <strong>PartyVerse</strong> (the "App"), you ("User," "you," or "your") agree to be bound by these Terms of Service ("Terms") with <strong>Arceon Studios</strong> ("we," "us," or "our"), the developer and publisher of PartyVerse.</p>
+    <p>If you do not agree to these Terms in their entirety, you must immediately cease using the App and uninstall it from your device. These Terms constitute a legally binding agreement between you and Arceon Studios.</p>
+    <p>We reserve the right to update these Terms at any time. Continued use of the App after any modification constitutes your acceptance of the revised Terms.</p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="num">2</span> Eligibility</h2>
+    <h3>2.1 Age Requirement</h3>
+    <p>You must be at least <strong>13 years of age</strong> to use PartyVerse. By using the App, you represent and warrant that you meet this requirement.</p>
+    <h3>2.2 Parental Consent</h3>
+    <p>If you are between 13 and 18 years of age, you represent that your parent or legal guardian has reviewed and agreed to these Terms on your behalf.</p>
+    <h3>2.3 Jurisdictional Compliance</h3>
+    <p>You are responsible for ensuring your use of the App complies with the laws applicable in your jurisdiction.</p>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="num">3</span> Licence Grant</h2>
+    <h3>3.1 Limited Licence</h3>
+    <p>Subject to your compliance with these Terms, Arceon Studios grants you a <strong>limited, non-exclusive, non-transferable, revocable, personal licence</strong> to download and use PartyVerse solely for your personal, non-commercial entertainment purposes on Android devices you own or control.</p>
+    <h3>3.2 Restrictions</h3>
+    <p>You may <strong>not</strong>:</p>
+    <ul>
+      <li>Copy, reproduce, distribute, or create derivative works of the App or any of its content</li>
+      <li>Reverse engineer, decompile, disassemble, or attempt to extract the source code of the App</li>
+      <li>Modify, translate, or create adaptations of the App</li>
+      <li>Remove or alter any proprietary notices, labels, or marks on the App</li>
+      <li>Use the App for any commercial purpose or public display</li>
+      <li>Rent, lease, lend, sell, sublicense, or transfer the App to any third party</li>
+      <li>Use automated bots, scripts, or other automated means to interact with the App</li>
+      <li>Circumvent, disable, or interfere with any security or licensing feature of the App</li>
+    </ul>
+    <h3>3.3 Reservation of Rights</h3>
+    <p>All rights not expressly granted in these Terms are reserved by Arceon Studios. This licence does not grant you any ownership interest in the App.</p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="num">4</span> In-App Purchases</h2>
+    <h3>4.1 PartyVerse Premium</h3>
+    <p>PartyVerse offers a <strong>one-time in-app purchase</strong> called "PartyVerse Premium" which unlocks additional content packs across all game modes and all future premium content released under the same App.</p>
+
+    <h3>4.2 Payment Processing</h3>
+    <p>All purchases are processed through <strong>Google Play Billing</strong> by Google LLC. By making a purchase, you also agree to Google's <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener">Terms of Service</a> and <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=googlepaytos&ldr=IN" target="_blank" rel="noopener">Payments Terms of Service</a>. We do not process or store your payment information directly.</p>
+
+    <h3>4.3 Pricing</h3>
+    <p>Prices are displayed in the Google Play Store in your local currency and include applicable taxes as determined by Google Play. Arceon Studios reserves the right to change prices at any time, with changes taking effect upon publication in the Play Store.</p>
+
+    <h3>4.4 One-Time Purchase &amp; Lifetime Access</h3>
+    <p>PartyVerse Premium is a <strong>one-time, non-recurring purchase</strong>. Once purchased:</p>
+    <ul>
+      <li>The entitlement is tied to your Google Play account</li>
+      <li>Premium can be restored on any device linked to your Google account via "Restore Purchases" in the App</li>
+      <li>The purchase grants access to all existing and all future premium content at no additional charge</li>
+    </ul>
+
+    <h3>4.5 Refunds</h3>
+    <div class="callout gold">
+      <strong>Refund policy:</strong> All purchases are subject to <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play's refund policy</a>. You may request a refund through Google Play within the applicable window (typically 48 hours). Arceon Studios does not control refund decisions made by Google Play.
+    </div>
+    <p>We may, at our sole discretion, consider goodwill refund requests sent to <a href="mailto:arceonstudios@gmail.com">arceonstudios@gmail.com</a> within 7 days of purchase, subject to verification.</p>
+
+    <h3>4.6 Non-Transferability</h3>
+    <p>In-app purchases are <strong>non-transferable</strong> and may not be shared, gifted, or transferred to another Google account.</p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="num">5</span> Intellectual Property</h2>
+    <h3>5.1 Ownership</h3>
+    <p>All content within PartyVerse — including game logic, UI design, artwork, graphics, sound effects, music, animations, game content (questions, words, prompts), text, and the PartyVerse name and logo — is the exclusive intellectual property of <strong>Arceon Studios</strong> or its licensors, protected by applicable copyright, trademark, and intellectual property laws of India and international treaties.</p>
+    <h3>5.2 Feedback</h3>
+    <p>If you provide feedback, suggestions, or ideas about the App, you grant Arceon Studios a perpetual, irrevocable, royalty-free, worldwide licence to use such Feedback in the App or any other product without any obligation or compensation to you.</p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2><span class="num">6</span> Acceptable Use</h2>
+    <p>You agree to use PartyVerse only for lawful purposes and in a manner that does not infringe the rights of others. You must not use the App:</p>
+    <ul>
+      <li>In any way that violates applicable local, national, or international law or regulation</li>
+      <li>To harass, abuse, threaten, or harm any other person</li>
+      <li>To impersonate any person or entity</li>
+      <li>In any way that could damage, disable, or impair the App</li>
+      <li>To attempt to gain unauthorised access to any part of the App or its infrastructure</li>
+    </ul>
+    <p>PartyVerse contains party game content intended for mature audiences. Some premium content packs include adult-themed questions and dares. You accept responsibility for ensuring the App is used appropriately within your group and that all participants consent to the nature of the content being played.</p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2><span class="num">7</span> Third-Party Services</h2>
+    <p>The App integrates with third-party services including Google Play Billing and Google Play Services. Your use of such services is subject to their respective terms. Arceon Studios is not responsible for the content, privacy practices, or availability of any third-party services.</p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="num">8</span> Disclaimers</h2>
+    <div class="caps">
+      THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.<br/><br/>
+      WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS. GAME CONTENT IS PROVIDED FOR ENTERTAINMENT PURPOSES ONLY.
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2><span class="num">9</span> Limitation of Liability</h2>
+    <div class="caps">
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ARCEON STUDIOS AND ITS FOUNDERS, OFFICERS, EMPLOYEES, AGENTS, AND LICENSORS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF DATA, LOSS OF PROFITS, OR ANY OTHER INTANGIBLE LOSS, ARISING FROM YOUR USE OF OR INABILITY TO USE THE APP.<br/><br/>
+      OUR TOTAL AGGREGATE LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID TO ARCEON STUDIOS IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM. IF YOU HAVE MADE NO PAYMENT, OUR LIABILITY SHALL NOT EXCEED INR 0 (ZERO).
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section>
+    <h2><span class="num">10</span> Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Arceon Studios and its founders, officers, employees, agents, and licensors from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising from your use of the App, your violation of these Terms, or your violation of any applicable law or the rights of any third party.</p>
+  </section>
+
+  <!-- 11 -->
+  <section>
+    <h2><span class="num">11</span> Updates and Modifications</h2>
+    <p>Arceon Studios reserves the right to modify, update, suspend, or discontinue the App or any part thereof at any time, with or without notice. We may push automatic updates through Google Play. Continued use of the App after any update constitutes your acceptance of the updated App.</p>
+    <p>We are not obligated to maintain backward compatibility or provide advance notice for changes to the App's features.</p>
+  </section>
+
+  <!-- 12 -->
+  <section>
+    <h2><span class="num">12</span> Termination</h2>
+    <h3>12.1 By You</h3>
+    <p>You may terminate your agreement to these Terms at any time by uninstalling the App.</p>
+    <h3>12.2 By Us</h3>
+    <p>Arceon Studios reserves the right to suspend or terminate your access to the App at any time, with or without cause or notice, if we reasonably believe you have violated these Terms or applicable law.</p>
+    <h3>12.3 Survival</h3>
+    <p>Sections 5 (Intellectual Property), 8 (Disclaimers), 9 (Limitation of Liability), 10 (Indemnification), 13 (Governing Law), and any provision that by its nature should survive termination, shall survive any termination of these Terms.</p>
+  </section>
+
+  <!-- 13 -->
+  <section>
+    <h2><span class="num">13</span> Governing Law &amp; Disputes</h2>
+    <h3>13.1 Governing Law</h3>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the <strong>Republic of India</strong>, without regard to its conflict of law provisions.</p>
+    <h3>13.2 Jurisdiction</h3>
+    <p>Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+    <h3>13.3 Informal Resolution</h3>
+    <p>Before initiating any legal proceedings, you agree to first attempt to resolve the dispute informally by contacting us at <a href="mailto:arceonstudios@gmail.com">arceonstudios@gmail.com</a>. We will make good-faith efforts to resolve the dispute within 30 days.</p>
+  </section>
+
+  <!-- 14 -->
+  <section>
+    <h2><span class="num">14</span> General Provisions</h2>
+    <ul>
+      <li><strong>Entire Agreement:</strong> These Terms, together with our <a href="privacy-policy.html">Privacy Policy</a>, constitute the entire agreement between you and Arceon Studios regarding your use of the App.</li>
+      <li><strong>Severability:</strong> If any provision is found invalid or unenforceable, the remaining provisions continue in full force.</li>
+      <li><strong>Waiver:</strong> Failure to enforce any right or provision shall not constitute a waiver of that right.</li>
+      <li><strong>Assignment:</strong> You may not assign your rights under these Terms without our written consent. Arceon Studios may assign these Terms freely.</li>
+      <li><strong>Language:</strong> These Terms are in English. In any conflict between language versions, English prevails.</li>
+    </ul>
+  </section>
+
+  <!-- 15 -->
+  <section>
+    <h2><span class="num">15</span> Contact Us</h2>
+    <p>For any questions, concerns, or complaints regarding these Terms:</p>
+    <div class="contact-card">
+      <p class="label">Developer</p>
+      <p><strong>Arceon Studios</strong></p>
+      <p class="label">Email</p>
+      <p><a href="mailto:arceonstudios@gmail.com">arceonstudios@gmail.com</a></p>
+      <p class="label">Response Time</p>
+      <p>We aim to respond to all enquiries within <strong>30 days</strong>.</p>
+    </div>
+  </section>
+
+  <div class="callout">
+    <strong>Legal compliance:</strong> These Terms are drafted to comply with the Google Play Developer Program Policies, the Consumer Protection Act, 2019 (India), the Information Technology Act, 2000 (India), and the Digital Personal Data Protection Act, 2023 (India).
+  </div>
+
+</main>
+
+<footer>
+  <span>© 2025 Arceon Studios. All rights reserved.</span>
+  <a href="privacy-policy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
